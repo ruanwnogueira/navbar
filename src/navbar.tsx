@@ -42,7 +42,11 @@ export default function Navbar() {
   };
 
   return (
-    <Box sx={{ width: 500 }}>
+    <Box
+      sx={{ width: "100%" }}
+      borderBottom={"1px solid #ccc"}
+      marginBottom={10}
+    >
       <BottomNavigation showLabels value={value} onChange={handleNavigation}>
         <BottomNavigationAction label="app" />
         <BottomNavigationAction label="react" />
