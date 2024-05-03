@@ -33,4 +33,4 @@ jobs:
 
       - name: Notify API
         run: |
-          curl -X POST -H "Content-Type: application/json" -d '{"component": "@mfe/navbar", "path": "${{secrets.URL_S3}}/navbar/${{ github.sha }}/mfe-root-config.js"}' ${{ secrets.URL_LAMBDA }}
+          curl -X POST -H "Content-Type: application/json" -d '{"component": "@mfe/navbar", "path": "${{secrets.URL_S3}}/navbar/${{ github.sha }}/mfe-navbar.js"}' ${{ secrets.URL_LAMBDA }}
